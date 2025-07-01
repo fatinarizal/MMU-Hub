@@ -1,0 +1,202 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapercave.com/wp/Um7TlCh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the full viewport */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    color: black;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for sidebar */
+    overflow-y: auto; /* Allows scrolling if content exceeds viewport */
+}
+
+.sidebar .user-info {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sidebar p {
+    font-size: 16px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background-color: #8b0000;
+    color: white;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px; /* Rounded corners for main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b0000;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: text-decoration 0.3s;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main form {
+    margin-bottom: 30px;
+}
+
+main label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+main input[type="text"],
+main textarea,
+main input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light border for better visibility */
+    border-radius: 4px; /* Rounded edges */
+}
+
+main textarea {
+    resize: vertical;
+}
+
+main button {
+    padding: 10px 20px;
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded edges */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+main button:hover {
+    background-color: red;
+}
+
+.current-announcement {
+    border: 1px solid #ccc;
+    color: black;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.current-announcement h3 {
+    margin-top: 0; /* Remove margin on top for a cleaner look */
+}
+
+.delete-button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded edges */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.delete-button:hover {
+    background-color: red;
+}
+
+.main-content .container {
+    background-color: #230f0f4e;
+}
+
+/* Message styling */
+.message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Adjust sidebar width on smaller screens */
+    }
+
+    .main-content {
+        margin-left: 200px; /* Adjust margin for smaller screens */
+    }
+
+    header {
+        flex-direction: column; /* Stack header items on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    header nav a {
+        margin-left: 0; /* Reset margin for nav items */
+        margin-top: 5px; /* Add some space between items */
+    }
+
+    main input[type="text"],
+    main textarea,
+    main input[type="file"],
+    main button {
+        font-size: 0.9em; /* Slightly smaller font for smaller screens */
+    }
+}

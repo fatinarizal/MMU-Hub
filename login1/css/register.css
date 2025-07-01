@@ -1,0 +1,223 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpapercave.com/wp/Um7TlCh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the full viewport */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+/* Container for the form */
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    overflow: hidden;
+}
+
+/* Header of the form */
+header {
+    /* background-color: #007bff; */
+    color: #8b0000;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* Form box styling */
+.form-box {
+    padding: 20px;
+}
+
+.form-box header {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #8b0000;
+}
+
+.form-box hr {
+    background-color: #8b0000;
+    height: 5px;
+    width: 20%;
+    border: none;
+    margin: 5px auto;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.input-container {
+    display: flex;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 15px;
+    background: transparent;
+    color: #555;
+    background-color: #f1f1f1;
+    min-width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color: #f1f1f1;
+}
+
+.input-field:focus {
+    color: #8b0000;
+}
+
+.remember {
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.remember .check {
+    margin-right: 5px;
+}
+
+.remember span {
+    margin-left: 105px;
+}
+
+.remember span a {
+    text-decoration: none;
+    color: #8b0000;
+}
+
+.remember span a:hover {
+    font-weight: bold;
+}
+
+/* Centering the register button */
+.center {
+    text-align: center;
+}
+
+/* Button styles */
+.button {
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+
+.links {
+    margin: 25px;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: #8b0000;
+}
+
+.links a:hover {
+    font-weight: bold;
+}
+
+
+/* home page  */
+
+.nav {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right-links a {
+    padding: 0 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.main-box .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 840px) {
+    .main-box .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .top .box {
+        margin: 10px 10px;
+    }
+
+    .bottom {
+        margin-top: 0;
+    }
+}
+
+
+.message {
+    text-align: left;
+    /* background: #f9ede4; */
+    padding: 15px 0px;
+    /* border: 1px solid #699062; */
+    /* border-radius: 5px; */
+    /* margin-bottom: 10px; */
+    color: rebeccapurple;
+}
+

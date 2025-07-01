@@ -1,0 +1,212 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapercave.com/wp/Um7TlCh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Makes the image cover the full viewport */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    color: black;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for sidebar */
+    overflow-y: auto; /* Allows scrolling if content exceeds viewport */
+}
+
+.sidebar .user-info {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sidebar p {
+    font-size: 16px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background-color: #8b0000;
+    color: white;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px; /* Rounded corners for main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b0000;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: text-decoration 0.3s;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #dee2e6;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons */
+.btn .btn-danger{
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn .btn-danger:hover {
+    background-color: red;
+}
+
+/* Add New Venue Button Styling */
+.btn-add-venue {
+    background-color: #28a745;
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Cursor pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn-add-venue:hover {
+    background-color: #218838;
+}
+
+/* Alerts */
+.alert {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.close {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .alert {
+        font-size: 14px;
+    }
+}
